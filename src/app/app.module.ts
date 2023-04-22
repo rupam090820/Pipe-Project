@@ -3,12 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
+import { FormsModule } from '@angular/forms';
+import { FilterPipe } from './filter.pipe';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FilterPipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
